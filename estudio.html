@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estudio.css">
+    <script src="js/estudio.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="Header">
+        <a href="index.html" class="Header-logo--a">
+            <h1 class="Header-h1">Facal Varela arquitectura e interiorismo</h1>
+
+            <picture class="Header-logo">
+                <img loading="lazy" src="assets/simple-blanco.svg" alt="logo facal varela" class="Header-svg">
+            </picture>
+        </a>
+        <nav class="Header-nav">
+            <ul class="Header-ul">
+                <li class="Header-li"><a href="estudio.html" class="Header-a">Estudio</a></li>
+                <li class="Header-li"><a href="servicios.html" class="Header-a">Servicios</a></li>
+                <li class="Header-li"><a href="proyectos.html" class="Header-a">Proyectos</a></li>
+                <li class="Header-li"><a href="lowcost.html" class="Header-a">Low cost</a></li>
+                <li class="Header-li"><a href="contacto.html" class="Header-a">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="Responsive">
+            <button class="Header-hambur">
+                <img loading="lazy" src="assets/hambur.svg" alt="Menu hambburguesa" class="Hambur-svg">
+            </button>
+            <div class="Header-responsive">
+                <ul class="Responsive-ul">
+                    <li class="Responsive-li"><a href="index.html" class="Responsive-a">Inicio</a></li>
+                    <li class="Responsive-li"><a href="estudio.html" class="Responsive-a">Estudio</a></li>
+                    <li class="Responsive-li"><a href="servicios.html" class="Responsive-a">Servicios</a></li>
+                    <li class="Responsive-li"><a href="proyectos.html" class="Responsive-a">Proyectos</a></li>
+                    <li class="Responsive-li"><a href="lowcost.html" class="Responsive-a">Low cost</a></li>
+                    <li class="Responsive-li"><a href="contacto.html" class="Responsive-a">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="Main">
+        <section class="Hero">
+            <div class="Hero-text">
+                <h2 class="Hero-h1">Conoce nuestro estudio</h2>
+                <p class="Hero-p">Facal Varela, Arquitectura e Interiorismo es un estudio de arquitectura gallego
+                    fundado en 2006 por la arquitecta Rosa Mª Facal Varela (1980) E.T.S.A.C con oficina en Santa Comba,
+                    A Coruña.
+                </p>
+                <a href="contacto.html" class="Button">
+                    <span class="Button--span">Contacto</span>
+                    <img loading="lazy" class="Button--svg" src="assets/arrow-right-short.svg"
+                        alt="flecha a la derecha">
+                </a>
+            </div>
+            <picture class="Hero-picture">
+                <img loading="lazy" src="assets/lineas.svg" alt="lineas" class="Hero-svg">
+            </picture>
+        </section>
+
+         <!-- En esta sección se destaca la colaboración del estudio con el "Plan de Empleo Local". 
+         Está diseñada para resaltar el impacto y la contribución del estudio al desarrollo local. -->
+        <section class="Empleo">
+            <picture class="Empleo-picture">
+                <img loading="lazy" src="assets/image.webp" alt="lineas" class="Empleo-svg">
+            </picture>
+
+            <div class="Empleo-text">
+                <h2 class="Empleo-h2">Facal Varela Arquitectura colabora con Plan de emprego local</h2>
+                <p class="Empleo-p">Socialmente indispensables: El Plan de Empleo Local constituye una estrategia para
+                    el desarrollo sostenible del territorio, que tiene cómo principal objetivo contribuir a un
+                    crecimiento sostenible promoviendo la creación de empleo estable y de calidad a nivel local.</p>
+            </div>
+
+        </section>
+
+        <!-- Esta sección describe los principales servicios ofrecidos por el estudio. Cada elemento de la lista está enlazado 
+         al HTML de servicios, y gracias al uso de ID se han enlazado a cada una de las secciones que corresponden dentro de la página -->
+        <section class="Servicios">
+            <div class="Servicios-text">
+                <h2 class="Servicios-text--h2">Servicios</h2>
+                <p class="Servicios-text--p">Todos los servicios son especializados y se distinguen por la calidad, la
+                    comunicación con el cliente y el control de costes. <br>
+                    Ofrecemos soluciones integrales en todas las fases de un proyecto inmobiliario, incluyendo la
+                    construcción, dando la posibilidad a nuestros clientes de realizar llave en mano.</p>
+                <a href="servicios.html" class="Button Button-servicios">
+                    <span class="Button--span">Servicios</span>
+                    <img loading="lazy" class="Button--svg" src="assets/arrow-right-short.svg"
+                        alt="flecha a la derecha">
+                </a>
+
+            </div>
+            <div class="Servicios-wrapper">
+                <ul class="Servicios-ul">
+                    <li class="Servicios-li Click">
+                        <a href="servicios.html#arqui" class="Servicios-a">
+                            <picture class="Servicios-picture">
+                                <img loading="lazy" src="assets/house.svg" alt="icono de servicios"
+                                    class="Servicios-logo">
+                            </picture>
+                            <h3 class="Servicios-h3">Arquitectura</h3>
+                        </a>
+                    </li>
+                    <li class="Servicios-li Click">
+                        <a href="servicios.html#diseño" class="Servicios-a">
+                            <picture class="Servicios-picture">
+                                <img loading="lazy" src="assets/lamp.svg" alt="icono de servicios"
+                                    class="Servicios-logo">
+                            </picture>
+                            <h3 class="Servicios-h3">Diseño</h3>
+                        </a>
+
+                    </li>
+                    <li class="Servicios-li Click">
+                        <a href="servicios.html#docu" class="Servicios-a">
+                            <picture class="Servicios-picture">
+                                <img loading="lazy" src="assets/files.svg" alt="icono de servicios"
+                                    class="Servicios-logo">
+                            </picture>
+                            <h3 class="Servicios-h3">Documentación</h3>
+                        </a>
+
+                    </li>
+                    <li class="Servicios-li Click">
+                        <a href="servicios.html#urba" class="Servicios-a">
+                            <picture class="Servicios-picture">
+                                <img loading="lazy" src="assets/buildings.svg" alt="icono de servicios"
+                                    class="Servicios-logo">
+                            </picture>
+                            <h3 class="Servicios-h3">Urbanización</h3>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- La sección de colaboradores muestra los logos de empresas con las que el estudio trabaja. -->
+        <section class="Colab">
+            <div class="Colab-text">
+                <h2 class="Colab-h2">Colaboradores</h2>
+                <p class="Colab-p">Contamos con un equipo multidisciplinar de técnicos cualificados con amplia
+                    experiencia en cada una de sus especialidades.</p>
+            </div>
+            <ul class="Colab-grid">
+                <li class="Colab-li">
+                    <Picture class="Colab-picture"><img loading="lazy" src="assets/Logo-Facal-Construvi-PNG.png"
+                            alt="logo de colaboradores" class="Colab-img"></Picture>
+                </li>
+                <li class="Colab-li">
+                    <Picture class="Colab-picture"><img loading="lazy" src="assets/citania_interiorismo-min.png"
+                            alt="logo de colaboradores" class="Colab-img"></Picture>
+                </li>
+                <li class="Colab-li">
+                    <Picture class="Colab-picture"><img loading="lazy" src="assets/unnamed-min.png"
+                            alt="logo de colaboradores" class="Colab-img"></Picture>
+                </li>
+            </ul>
+
+        </section>
+
+
+        <!-- Esta sección tiene caracter informativo, muestra imágenes del programa de televisión de arquitectura que protagoniza
+         la arquitecta del estudio
+          -->
+        <section class="Gal">
+            <div class="Gal-text">
+                <h2 class="Gal-h2">Galicia Bonita, unha loita contra o feísmo</h2>
+                <p class="Gal-p">La arquitecta Rosa Facal y sus pintorescos ayudantes visitan varias viviendas en mal
+                    estado de la geografía gallega para asesorar y ayudar en su rehabilitación.</p>
+                <a href="contacto.html" class="Button Button-gal">
+                    <span class="Button--span">Saber más</span>
+                    <img loading="lazy" class="Button--svg" src="assets/arrow-right-short.svg"
+                        alt="flecha a la derecha">
+                </a>
+            </div>
+
+             <!-- Esta lista presenta imágenes del proyecto "Galicia Bonita". Las imágenes ayudan a ilustrar el impacto visual y emocional de la iniciativa. -->
+            <ul class="Gal-grid">
+                <li class="Gal-li">
+                    <picture class="Gal-picture"><img loading="lazy" src="assets/galicia-bonita-min.jpg" alt="Imagen de Galicia Bonita"
+                            class="Gal-img"></picture>
+                </li>
+                <li class="Gal-li">
+                    <picture class="Gal-picture"><img loading="lazy" src="assets/galbon-min.jpg" alt="Imagen de Galicia Bonita"
+                            class="Gal-img"></picture>
+                </li>
+                <li class="Gal-li">
+                    <picture class="Gal-picture"><img loading="lazy" src="assets/fotoga.jpg" alt="Imagen de Galicia Bonita"
+                            class="Gal-img"></picture>
+                </li>
+                <li class="Gal-li">
+                    <picture class="Gal-picture"><img loading="lazy" src="assets/fotogali.jpg" alt="Imagen de Galicia Bonita"
+                            class="Gal-img"></picture>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="Footer">
+        <div class="Footer-wrapper">
+            <picture class="Footer-logo">
+                <img loading="lazy" src="assets/simple-blanco.svg" alt="Logo facal varela" class="Footer-img">
+            </picture>
+            <ul class="Footer-ul">
+                <li class="Footer-li"><a href="https://es.linkedin.com" target="_blank" rel="noopener noreferrer"
+                        class="Footer-a--redes"><img loading="lazy" src="assets/linkedin.svg" alt="Instagram"
+                            class="Footer-li--redes"></a>
+                </li>
+                <li class="Footer-li"><a
+                        href="https://www.facebook.com/people/FACAL-Varela-arquitectura-e-interiorismo/100063511334320/?locale=es_ES"
+                        target="_blank" rel="noopener noreferrer" class="Footer-a--redes"><img loading="lazy"
+                            src="assets/facebook.svg" alt="Faceebok" class="Footer-li--redes"></a>
+                </li>
+                <li class="Footer-li"><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
+                        class="Footer-a--redes"><img loading="lazy" src="assets/logo-instagram.svg" alt="Linkedin"
+                            class="Footer-li--redes"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="Footer-info">
+            <ul class="Footer-pags">
+                <li class="Pags-li Contact-title ">Páginas</li>
+                <li class="Pags-li first"><a href="index.html" class="Pags-a">Inicio</a></li>
+                <li class="Pags-li"><a href="estudio.html" class="Pags-a">Estudio</a></li>
+                <li class="Pags-li"><a href="servicios.html" class="Pags-a">Servicios</a></li>
+                <li class="Pags-li"><a href="proyectos.html" class="Pags-a">Proyectos</a></li>
+                <li class="Pags-li"><a href="lowcost.html" class="Pags-a">Low cost</a></li>
+                <li class="Pags-li"><a href="contacto.html" class="Pags-a">Contacto</a></li>
+            </ul>
+            <div class="Contact-wrapper">
+                <div class="Contact-section">
+                    <h3 class="Contact-title">Dirección</h3>
+                    <p class="Contact-item first">Rúa de María Pita, s/n</p>
+                    <p class="Contact-item">Entreplanta Dcha B</p>
+                    <p class="Contact-item">15840. Santa Comba, A Coruña</p>
+                </div>
+
+                <div class="Contact-section">
+                    <a href="tel:+34616791013" class="Contact-item first">616 79 10 13</a>
+                    <a href="mailto:correo@arquitecturafv.es" class="Contact-item">correo@arquitecturafv.es</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

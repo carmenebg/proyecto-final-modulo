@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/servicios.css">
+    <script src="js/servicios.js" defer></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="Header">
+        <a href="index.html" class="Header-logo--a">
+            <h1 class="Header-h1">Facal Varela arquitectura e interiorismo</h1>
+
+            <picture class="Header-logo">
+                <img src="assets/simple-blanco.svg" alt="logo facal varela" class="Header-svg">
+            </picture>
+        </a>
+        <nav class="Header-nav">
+            <ul class="Header-ul">
+                <li class="Header-li"><a href="estudio.html" class="Header-a">Estudio</a></li>
+                <li class="Header-li"><a href="servicios.html" class="Header-a">Servicios</a></li>
+                <li class="Header-li"><a href="proyectos.html" class="Header-a">Proyectos</a></li>
+                <li class="Header-li"><a href="lowcost.html" class="Header-a">Low cost</a></li>
+                <li class="Header-li"><a href="contacto.html" class="Header-a">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="Responsive">
+            <button class="Header-hambur">
+                <img loading="lazy" src="assets/hambur.svg" alt="Menu hambburguesa" class="Hambur-svg">
+            </button>
+            <div class="Header-responsive">
+                <ul class="Responsive-ul">
+                    <li class="Responsive-li"><a href="index.html" class="Responsive-a">Inicio</a></li>
+                    <li class="Responsive-li"><a href="estudio.html" class="Responsive-a">Estudio</a></li>
+                    <li class="Responsive-li"><a href="servicios.html" class="Responsive-a">Servicios</a></li>
+                    <li class="Responsive-li"><a href="proyectos.html" class="Responsive-a">Proyectos</a></li>
+                    <li class="Responsive-li"><a href="lowcost.html" class="Responsive-a">Low cost</a></li>
+                    <li class="Responsive-li"><a href="contacto.html" class="Responsive-a">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="Main">
+        <section class="Hero margin">
+            <h2 class="Hero-h1">Descubre nuestros servicios</h2>
+            <p class="Hero-p">En Facal Varela Arquitectos ofrecemos servicios de arquitectura para particulares y
+                empresas.
+            </p>
+        </section>
+
+
+        <!--  Aquí tenemos un filtro en forma de botón con un ícono de "filtro" (representado por un gráfico). A continuación hay un menú 
+        con enlaces a cada una de las secciones de servicios: Arquitectura, Diseño y Documentación técnica. Esto permite a los usuarios navegar 
+        rápidamente entre las distintas categorías de servicios. -->
+        <div class="Filtro">
+            <button class="Filtro-button"><img src="assets/filter-left.svg" alt="icono de filtro" class="Filtro-svg">
+            </button>
+            <ul class="Filtro-ul">
+                <li class="Filtro-li"><a href="#arqui" class="Filtro-a">Arquitectura</a></li>
+                <li class="Filtro-li"><a href="#diseño" class="Filtro-a">Diseño</a></li>
+                <li class="Filtro-li"><a href="#docu" class="Filtro-a">Documentación técnica</a></li>
+            </ul>
+        </div>
+        <!-- A cada una de las secciones se les ha añadido un ID para poder enlazarlas con otros HTML y que el enlace dirija directamente a la sección deseada -->
+
+        <!-- Esta es una de las secciones principales, donde se describen los servicios que la empresa ofrece en el ámbito de la arquitectura. -->
+        <section class="Section" id="arqui">
+            <div class="Info-wrapper">
+                <h2 class="Info-h2">Arquitecura</h2>
+                <a href="contacto.html" class="Button Click">
+                    <span class="Button--span">Más información</span>
+                    <img class="Button--svg" src="assets/arrow-right-short.svg" alt="flecha a la derecha">
+                </a>
+            </div>
+            <div class="Grid-wrapper">
+                <ul class="Grid-ul">
+                    <li class="Grid-li">
+                        <div class="Grid-info--wrapper">
+                            <img src="assets/house.svg" alt="icono" class="Grid-img">
+                            <h4 class="Grid-h4">Obra nueva</h4>
+                            <span class="Grid-span">Organizamos su obra a todos los niveles, desde la concepción del
+                                proyecto hasta la puesta en servicio del edificio, asesorándole en el diseño y los
+                                materiales, en la elección del constructor, controlando y supervisando por usted su
+                                desarrollo, gestionando ante las administraciones toda la documentación [licencias,
+                                permisos, certificaciones, catastro notarias, registro, etc.] y coordinado a todos los
+                                agentes intervinientes en la obra.</span>
+                        </div>
+                    </li>
+                    <li class="Grid-li">
+                        <div class="Grid-info--wrapper">
+                            <img src="assets/tool-svgrepo-com.svg" alt="icono" class="Grid-img">
+                            <h4 class="Grid-h4">Reformas</h4>
+                            <ul class="Reformas-ul">
+                                <li class="Reformas-ul">Ofrecemos servicios de reforma parcial o integral de:</li>
+                                <li class="Reformas-li first">Viviendas</li>
+                                <li class="Reformas-li">Pisos</li>
+                                <li class="Reformas-li">Locales comerciales</li>
+                                <li class="Reformas-li">Oficinas</li>
+                                <li class="Reformas-li">Zonas comunes</li>
+                                <li class="Reformas-li">Micro-encargos</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="Grid-li">
+                        <div class="Grid-info--wrapper">
+                            <img src="assets/paint-bucket.svg" alt="icono" class="Grid-img">
+                            <h4 class="Grid-h4">Rehabilitación</h4>
+                            <span class="Grid-span">Proyectos de rehabilitación, tanto integral como parcial de
+                                edificios y viviendas unifamiliares.
+                                En cada uno de nuestros proyectos ofrecemos un análisis y estudio previo de costes para
+                                orientar y ayudar a nuestros clientes a tomar las decisiones acertadas.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+        <!-- En esta sección, se detallan los servicios de diseño que la empresa ofrece, como diseño de interiores, diseño de mobiliario, diseño gráfico, etc. -->
+        <section class="Section" id="diseño">
+            <div class="Info-wrapper ">
+                <h2 class="Info-h2">Diseño</h2>
+                <a href="contacto.html" class="Button Click">
+                    <span class="Button--span">Más información</span>
+                    <img class="Button--svg" src="assets/arrow-right-short.svg" alt="flecha a la derecha">
+                </a>
+            </div>
+            <div class="Grid-wrapper">
+                <ul class="Grid-ul">
+                    <li class="Grid-li">
+                        <div class="Grid-info--wrapper">
+                            <img src="assets/chair-svgrepo-com.svg" alt="icono" class="Grid-img">
+                            <h4 class="Grid-h4">Diseño de interiores</h4>
+                            <span class="Grid-span">Organizamos su obra a todos los niveles, desde la concepción del
+                                proyecto hasta la puesta en servicio del edificio, asesorándole en el diseño y los
+                                materiales, en la elección del constructor. </span>
+                        </div>
+                    </li>
+                    <li class="Grid-li">
+                        <div class="Grid-info--wrapper">
+                            <img src="assets/shop.svg" alt="icono" class="Grid-img">
+                            <h4 class="Grid-h4">Locales comerciales</h4>
+                            <ul class="Reformas-ul">
+                                <li class="Reformas-li">Oficinas</li>
+                                <li class="Reformas-li">Escaparates</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="Grid-li">
+                        <div class="Grid-info--wrapper">
+                            <img src="assets/lamp.svg" alt="icono" class="Grid-img">
+                            <h4 class="Grid-h4">Diseño de mobiliario</h4>
+                            <ul class="Reformas-ul">
+                                <li class="Reformas-ul">Se realizan diseños de muebles a medida, incluyendo el
+                                    asesoramiento en la petición de presupuestos para la construcción del mueble.</li>
+                                <li class="Reformas-li first">Memorias: Descripción y construcción.</li>
+                                <li class="Reformas-li">Documentación gráfica: Esquemas, planos de todas las plantas,
+                                    alzados y secciones, acabados, cotas, etc</li>
+                                <li class="Reformas-li">Vistas infográficas y esquemas en 3D.
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="Grid-li">
+                        <div class="Grid-info--wrapper">
+                            <img src="assets/brush.svg" alt="icono" class="Grid-img">
+                            <h4 class="Grid-h4">Diseño gráfico</h4>
+                            <span class="Grid-span">Desarrollo de imágenes corporativas, logos, marcas, señalética,
+                                banderolas, marquesinas, etc. Realización de infografías 3d.
+                            </span>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+        </section>
+
+        <!--  Aquí se ofrecen servicios relacionados con la documentación técnica -->
+        <section class="Section docu" id="docu">
+            <div class="Info-wrapper ">
+                <h2 class="Info-h2">Info técnica</h2>
+                <a href="contacto.html" class="Button Click">
+                    <span class="Button--span">Más información</span>
+                    <img class="Button--svg" src="assets/arrow-right-short.svg" alt="flecha a la derecha">
+                </a>
+            </div>
+            <div class="Grid-wrapper">
+                <ul class="Grid-ul">
+
+                    <li class="Grid-li">
+                        <div class="Grid-info--wrapper">
+                            <img src="assets/clipboard.svg" alt="icono" class="Grid-img">
+                            <h4 class="Grid-h4">Informes técnicos</h4>
+                            <ul class="Reformas-ul">
+                                <li class="Reformas-ul">Se realizan informes judiciales, informes técnicos, etc. visados
+                                    por el Colegio de Arquitectos.</li>
+                                <li class="Reformas-li first">Mediciones</li>
+                                <li class="Reformas-li">Licencias de actividad</li>
+                                <li class="Reformas-li">Peritaciones</li>
+                                <li class="Reformas-li">Informes periciales</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="Grid-li">
+                        <div class="Grid-info--wrapper">
+                            <img src="assets/building-check.svg" alt="icono" class="Grid-img">
+                            <h4 class="Grid-h4">Inspección técnica de edificios I.T.E.</h4>
+                            <span class="Grid-span">Realizamos ITEs visadas por el Colegio de Arquitectos, incluyendo
+                                los trámites con el Ayuntamiento.
+                            </span>
+                        </div>
+                    </li>
+                    <li class="Grid-li">
+                        <div class="Grid-info--wrapper">
+                            <img src="assets/lightning-charge.svg" alt="icono" class="Grid-img">
+                            <h4 class="Grid-h4">Certificación energética</h4>
+                            <span class="Grid-span"><a href="x" class="Certificaciones">Contacta con nosotros para
+                                    obtener más información sobre certificaciones energéticas</a></span>
+                        </div>
+                    </li>
+                    <li class="Grid-li">
+                        <div class="Grid-info--wrapper">
+                            <img src="assets/buildings.svg" alt="icono" class="Grid-img">
+                            <h4 class="Grid-h4">Urbanismo</h4>
+                            <span class="Grid-span">Se desarrollan planes parciales, planes especiales, sectorizaciones,
+                                estudios de viabilidad, etc.
+                            </span>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="Footer">
+        <div class="Footer-wrapper">
+            <picture class="Footer-logo">
+                <img src="assets/simple-blanco.svg" alt="Logo facal varela" class="Footer-img">
+            </picture>
+            <ul class="Footer-ul">
+                <li class="Footer-li"><a href="https://es.linkedin.com" target="_blank" rel="noopener noreferrer"
+                        class="Footer-a--redes"><img src="assets/linkedin.svg" alt="Instagram"
+                            class="Footer-li--redes"></a>
+                </li>
+                <li class="Footer-li"><a
+                        href="https://www.facebook.com/people/FACAL-Varela-arquitectura-e-interiorismo/100063511334320/?locale=es_ES"
+                        target="_blank" rel="noopener noreferrer" class="Footer-a--redes"><img src="assets/facebook.svg"
+                            alt="Faceebok" class="Footer-li--redes"></a>
+                </li>
+                <li class="Footer-li"><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
+                        class="Footer-a--redes"><img src="assets/logo-instagram.svg" alt="Linkedin"
+                            class="Footer-li--redes"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="Footer-info">
+            <ul class="Footer-pags">
+                <li class="Pags-li Contact-title ">Páginas</li>
+                <li class="Pags-li first"><a href="index.html" class="Pags-a">Inicio</a></li>
+                <li class="Pags-li"><a href="estudio.html" class="Pags-a">Estudio</a></li>
+                <li class="Pags-li"><a href="servicios.html" class="Pags-a">Servicios</a></li>
+                <li class="Pags-li"><a href="proyectos.html" class="Pags-a">Proyectos</a></li>
+                <li class="Pags-li"><a href="lowcost.html" class="Pags-a">Low cost</a></li>
+                <li class="Pags-li"><a href="contacto.html" class="Pags-a">Contacto</a></li>
+            </ul>
+            <div class="Contact-wrapper">
+                <div class="Contact-section">
+                    <h3 class="Contact-title">Dirección</h3>
+                    <p class="Contact-item first">Rúa de María Pita, s/n</p>
+                    <p class="Contact-item">Entreplanta Dcha B</p>
+                    <p class="Contact-item">15840. Santa Comba, A Coruña</p>
+                </div>
+
+                <div class="Contact-section">
+                    <a href="tel:+34616791013" class="Contact-item first">616 79 10 13</a>
+                    <a href="mailto:correo@arquitecturafv.es" class="Contact-item">correo@arquitecturafv.es</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

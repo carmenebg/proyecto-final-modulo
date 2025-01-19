@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/contacto.css">
+    <script src="js/contacto.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="Header">
+        <a href="index.html" class="Header-logo--a">
+            <h1 class="Header-h1">Facal Varela arquitectura e interiorismo</h1>
+            <picture class="Header-logo">
+                <img loading="lazy" src="assets/simple-blanco.svg" alt="logo facal varela" class="Header-svg">
+            </picture>
+        </a>
+        <nav class="Header-nav">
+            <ul class="Header-ul">
+                <li class="Header-li"><a href="estudio.html" class="Header-a">Estudio</a></li>
+                <li class="Header-li"><a href="servicios.html" class="Header-a">Servicios</a></li>
+                <li class="Header-li"><a href="proyectos.html" class="Header-a">Proyectos</a></li>
+                <li class="Header-li"><a href="lowcost.html" class="Header-a">Low cost</a></li>
+                <li class="Header-li"><a href="contacto.html" class="Header-a">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="Responsive">
+            <button class="Header-hambur">
+                <img loading="lazy" src="assets/hambur.svg" alt="Menu hambburguesa" class="Hambur-svg">
+            </button>
+            <div class="Header-responsive">
+                <ul class="Responsive-ul">
+                    <li class="Responsive-li"><a href="index.html" class="Responsive-a">Inicio</a></li>
+                    <li class="Responsive-li"><a href="estudio.html" class="Responsive-a">Estudio</a></li>
+                    <li class="Responsive-li"><a href="servicios.html" class="Responsive-a">Servicios</a></li>
+                    <li class="Responsive-li"><a href="proyectos.html" class="Responsive-a">Proyectos</a></li>
+                    <li class="Responsive-li"><a href="lowcost.html" class="Responsive-a">Low cost</a></li>
+                    <li class="Responsive-li"><a href="contacto.html" class="Responsive-a">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Esta es la sección principal de contacto donde los usuarios pueden obtener información y enviar consultas. -->
+    <main class="Main">
+
+        <!-- En esta parte se incluye el título de la sección y una breve descripción sobre cómo pueden ponerse en contacto con el estudio. -->
+        <section class="Contacto">
+            <div class="Contacto-text">
+                <h2 class="Contacto-h2">Contacto</h2>
+                <p class="Contacto-p">Solicita información sin compromiso o deja tus datos y nos pondremos en contacto
+                    contigo lo antes posible. Estaremos encantados de resolver tus dudas y ofrecerte nuestros servicios
+                    para hacer realidad tu proyecto.
+                </p>
+                <!-- A continuación se encuentran los enlaces para contactar directamente al estudio por email y teléfono. Se han usado los atributos
+                 tel: y mailto para que al pinchar sobre la información, se abra directamente la aplicación correspondiente para facilitar la navegación. -->
+                <div class="Contacto-section">
+                    <a href="mailto:correo@arquitecturafv.es" class="Contacto-item">correo@arquitecturafv.es</a>
+                    <a href="tel:+34616791013" class="Contacto-item">616 79 10 13</a>
+                </div>
+
+                <!-- Esta parte incluye los iconos de redes sociales a las que se puede acceder desde la página. Tienen el atributo Target Blank y noopener noreferer para que se 
+                 abran en una ventana diferente. -->
+                <div class="Contacto-redes">
+                    <ul class="Footer-ul">
+                        <li class="Footer-li"><a href="linkedin.com" target="_blank" rel="noopener noreferer"
+                                class="Footer-a--redes"><img loading="lazy" src="assets/linkedin.svg" alt="Instagram"
+                                    class="Footer-li--redes"></a></li>
+                        <li class="Footer-li"><a href="facebook.com" target="_blank" rel="noopener noreferer"
+                                class="Footer-a--redes"><img loading="lazy" src="assets/facebook.svg" alt="Faceebok"
+                                    class="Footer-li--redes"></a></li>
+                        <li class="Footer-li"><a href="instagram.com" target="_blank" rel="noopener noreferer"
+                                class="Footer-a--redes"><img src="assets/icons8-instagram-logo.svg" alt="Linkedin"
+                                    class="Footer-li--redes"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Esta es la sección del formulario de contacto. Permite a los usuarios enviar mensajes directamente desde la página.
+             Al no tener una URL donde se reciba la información, en este caso el formulario no es funcional -->
+             <form action="x" method="get" class="Contacto-form">
+                <!-- Cada campo de entrada está diseñado para recoger la información del usuario de forma ordenada. -->
+                <label class="Contact-label">
+                    <!-- Campo de texto para el nombre completo. Es un campo obligatorio para poder enviar el formulario. -->
+                    <input placeholder="Nombre completo" type="text" name="nombre" class="Contacto-input" required>
+                </label>
+                <label class="Contact-label">
+                    <!-- Campo de texto para el asunto del mensaje. También es obligatorio. -->
+                    <input placeholder="Asunto" type="text" name="asunto" class="Contacto-input" required>
+                </label>
+                <label class="Contact-label">
+                    <!-- Campo de entrada para el correo electrónico. El navegador valida que el formato del email sea correcto. -->
+                    <input placeholder="Email" type="email" name="email" class="Contacto-input" required>
+                </label>
+                <label class="Contact-label">
+                    <!-- Un campo de área de texto donde el usuario puede escribir el mensaje que quiere enviar. -->
+                    <textarea placeholder="Mensaje" name="mensaje" class="Contacto-input" required></textarea>
+                </label>
+                <!-- Eliminamos la etiqueta label dentro de otra etiqueta label -->
+                <div class="Contacto-input--label">
+                    <!-- Aquí se solicita al usuario que acepte los términos de uso y la política de privacidad antes de enviar el formulario. -->
+                    <input type="checkbox" name="aceptar_terminos" class="Contacto-input--checkbox" required>
+                    <span class="Contacto-span">He leído y acepto las condiciones de uso y la política de privacidad.</span>
+                </div>
+                <button type="submit" class="Contacto-button Button">
+                    <span class="Button--span">Enviar</span>
+                    <img loading="lazy" class="Button--svg" src="assets/arrow-right-short.svg" alt="flecha a la derecha">
+                </button>
+            </form>
+        </section>
+
+        <!-- Al final de la sección de contacto, se ha agregado un mapa interactivo de Google Maps que muestra la ubicación del estudio. 
+         Se puede acceder directamente a la dirección en Google Maps pinchando sobre el mapa. El código se ha cogido del propio Google Maps -->
+        <div class="Contacto-map">
+            <iframe class="Contacto-map--recurso"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5832.362029880847!2d-8.817701334200859!3d43.03762277435579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2ee9c80ef1a177%3A0x4ae36cbba59efe1b!2sR%C3%BAa%20Mar%C3%ADa%20Pita%2C%2015840%20Santa%20Comba%2C%20A%20Coru%C3%B1a!5e0!3m2!1ses!2ses!4v1736793877958!5m2!1ses!2ses"
+                width="1400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+    <footer class="Footer">
+        <div class="Footer-wrapper">
+            <picture class="Footer-logo">
+                <img loading="lazy" src="assets/simple-blanco.svg" alt="Logo facal varela" class="Footer-img">
+            </picture>
+            <ul class="Footer-ul">
+                <li class="Footer-li"><a href="https://es.linkedin.com" target="_blank" rel="noopener noreferrer"
+                        class="Footer-a--redes"><img loading="lazy" src="assets/linkedin.svg" alt="Instagram"
+                            class="Footer-li--redes"></a>
+                </li>
+                <li class="Footer-li"><a
+                        href="https://www.facebook.com/people/FACAL-Varela-arquitectura-e-interiorismo/100063511334320/?locale=es_ES"
+                        target="_blank" rel="noopener noreferrer" class="Footer-a--redes"><img loading="lazy"
+                            src="assets/facebook.svg" alt="Faceebok" class="Footer-li--redes"></a>
+                </li>
+                <li class="Footer-li"><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
+                        class="Footer-a--redes"><img loading="lazy" src="assets/logo-instagram.svg" alt="Linkedin"
+                            class="Footer-li--redes"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="Footer-info">
+            <ul class="Footer-pags">
+                <li class="Pags-li Contact-title ">Páginas</li>
+                <li class="Pags-li first"><a href="index.html" class="Pags-a">Inicio</a></li>
+                <li class="Pags-li"><a href="estudio.html" class="Pags-a">Estudio</a></li>
+                <li class="Pags-li"><a href="servicios.html" class="Pags-a">Servicios</a></li>
+                <li class="Pags-li"><a href="proyectos.html" class="Pags-a">Proyectos</a></li>
+                <li class="Pags-li"><a href="lowcost.html" class="Pags-a">Low cost</a></li>
+                <li class="Pags-li"><a href="contacto.html" class="Pags-a">Contacto</a></li>
+            </ul>
+            <div class="Contact-wrapper">
+                <div class="Contact-section">
+                    <h3 class="Contact-title">Dirección</h3>
+                    <p class="Contact-item first">Rúa de María Pita, s/n</p>
+                    <p class="Contact-item">Entreplanta Dcha B</p>
+                    <p class="Contact-item">15840. Santa Comba, A Coruña</p>
+                </div>
+
+                <div class="Contact-section">
+                    <a href="tel:+34616791013" class="Contact-item first">616 79 10 13</a>
+                    <a href="mailto:correo@arquitecturafv.es" class="Contact-item">correo@arquitecturafv.es</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

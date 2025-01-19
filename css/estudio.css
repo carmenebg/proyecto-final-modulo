@@ -1,0 +1,866 @@
+/* Reset / Normmalizador */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+p a {
+    display: inline;
+}
+
+img,
+svg {
+    display: block;
+    width: 100%;
+    height: inherit;
+}
+
+svg {
+    fill: currentColor;
+}
+
+:root {
+    font-size: 100%;
+    scroll-behavior: smooth;
+    font-family: "Syne", sans-serif;
+
+    --color-primary: rgb(255, 255, 252);
+    --color-secundary: #002200;
+    --color-terciary: lightgray;
+    --color-cuarty: rgb(160, 159, 159);
+
+}
+
+body {
+    font-family: "Syne", sans-serif;
+    hyphens: auto;
+    color: var(--color-secundary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.Button {
+    background-color: var(--color-terciary);
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 1.25rem;
+    padding: .3125rem .625rem;
+
+    border-radius: 3.125rem;
+
+    transition: all .3s ease;
+}
+
+.Button:hover {
+    background-color: var(--color-cuarty);
+}
+
+.Button:hover .Button--svg {
+    transform: translateX(-0.9375rem);
+
+}
+
+.Button--span {
+    font-family: "Syne", serif;
+}
+
+.Button--svg {
+    width: 1rem;
+    transition: all .3s ease;
+}
+
+.Pointer{
+    width: 1.5625rem;
+    height: 1.5625rem;
+    border-radius: 3.125rem;
+    pointer-events: none;
+
+    position: fixed;
+    top: -0.75rem;
+    left: -0.75rem;
+
+    mix-blend-mode:multiply;
+
+    opacity: 0;
+}
+
+.Hover{
+    width: 3.75rem;
+    height: 3.75rem;
+    background-color: var(--color-secundary);
+
+    top: -2.7rem;
+    left: -2.7rem;
+
+    transition: all 0.1s ease;
+
+    opacity: 1;
+}
+
+
+.Header {
+    background-color: var(--color-secundary);
+    color: var(--color-primary);
+    width: 100%;
+
+    padding: .625rem 1.875rem;
+
+    position: fixed;
+    top: 0rem;
+    right: 0rem;
+
+    font-size: 1.025rem;
+
+    z-index: 3;
+
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.Header-svg {
+    max-width: 5rem;
+}
+
+.Header-nav{
+    width: 90%;
+}
+
+.Header-ul {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+    align-items: center;
+
+    gap: 1.875rem;
+}
+
+
+.Header-h1{
+    display: none;
+}
+.Footer {
+    background-color: var(--color-secundary);
+    color: var(--color-primary);
+
+    padding: 3.75rem 1.875rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 3.125rem;
+}
+
+.Footer-wrapper {
+    width: 30%;
+    min-height: 12.5rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: start;
+
+    border-right: .0625rem solid var(--color-primary);
+}
+
+.Footer-img {
+    width: 7.5rem;
+}
+
+.Footer-ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+
+    gap: 1rem;
+}
+
+.Footer-li {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--color-primary);
+
+    border-radius: 50%;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Footer-a--redes {
+    width: 60%;
+    color: var(--color-secundary);
+}
+
+.Footer-info {
+    width: 70%;
+    min-height: 12.5rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.Footer-pags {
+    min-height: 11.25rem;
+    font-family: "Syne", sans-serif;
+    font-size: 1.5rem;
+    line-height: 100%;
+}
+
+.Pags-li {
+    font-size: 1.025rem;
+    line-height: 150%;
+    font-weight: 100;
+}
+
+.Contact-wrapper {
+    min-height: 11.25rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.Contact-ul {
+    font-family: "Syne", sans-serif;
+    font-size: 1.5rem;
+    line-height: 100%;
+}
+
+.Contact-li {
+    font-size: 1.025rem;
+    line-height: 150%;
+    font-weight: 100;
+}
+
+.Contact-title {
+    font-family: "Syne", sans-serif;
+    font-size: 1.5rem;
+    line-height: 100%;
+}
+
+.first {
+    margin-top: 1.25rem;
+}
+
+
+
+
+.Hero {
+    background-color: var(--color-primary);
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: .625rem;
+
+    margin-top: 5.2rem;
+    padding: 3.75rem 1.875rem;
+}
+.Hero-picture {
+    width: 50%;
+}
+.Hero-svg {
+    padding: 3.75rem;
+}
+.Hero-text {
+    width: 50%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: start;
+
+    gap: 1.25rem;
+}
+.Hero-h1 {
+    font-weight: 400;
+    font-size: 5rem;
+    line-height: 100%;
+}
+.Hero-p {
+    max-width: 70%;
+
+
+    font-size: 1.025rem;
+    line-height: 150%;
+    font-weight: 100;
+}
+
+
+
+.Empleo{
+    background-color: var(--color-secundary);
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 3.5rem;
+
+    margin-top: 5.2rem;
+    padding: 3.75rem 1.875rem;
+}
+.Empleo-picture{
+    width: 30%;
+}
+.Empleo-svg{
+    object-fit: contain;
+}
+.Empleo-text{
+    width: 60%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: start;
+
+    gap: 1.25rem;
+
+    color: var(--color-primary);
+}
+.Empleo-h2{
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 100%;
+
+    margin-bottom: 10px;
+
+}
+.Empleo-p{
+    width: 80%;
+
+    font-size: 1.025rem;
+    line-height: 150%;
+    font-weight: 100;
+}
+
+
+
+
+.Servicios{
+    background-color: var(--color-primary);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: start;
+
+    padding: 3.75rem 1.875rem;
+    gap: 1.25rem;
+
+}
+.Servicios-text {
+    width: 50%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: start;
+
+    gap: 1.7rem;
+
+}
+.Servicios-text--h2 {
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 100%;
+}
+.Servicios-text--p {
+    max-width: 85%;
+
+    font-size: 1.025rem;
+    line-height: 150%;
+    font-weight: 100;
+}
+.Servicios-wrapper{
+    width: 60%;
+    border-left: 1px solid var(--color-secundary);
+}
+.Servicios-ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    padding-left: 60px;
+}
+.Servicios-li {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: start;
+
+    gap: .625rem;
+
+    padding: 1.5rem;
+}
+.Servicios-logo {
+    width: 2.1rem;
+    height: 2.1rem;
+    /* margin: 0.6rem 0rem; */
+
+    transition: all 0.4s ease;
+}
+.Servicios-h3 {
+    font-family: "Syne", sans-serif;
+    font-size: 1.2rem;
+    line-height: 100%;
+
+    margin-top: 1.25rem;
+
+    transition: all 0.4s ease;
+
+}
+.Servicios-a{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: start;
+}
+.Servicios-p {
+    max-width: 70%;
+    font-size: 1.025rem;
+    line-height: 150%;
+    font-weight: 100;
+
+    transition: all 0.4s ease;
+
+}
+
+
+
+.Colab{
+    background-color: var(--color-primary);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    padding: 3.75rem 1.875rem;
+
+}
+.Colab-text{
+    width: 100%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+    padding: 3.5rem;
+
+    border-top: 2px solid var(--color-secundary);
+
+}
+.Colab-h2{
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 100%;
+}
+.Colab-p{
+    max-width: 50%;
+
+    font-size: 1.025rem;
+    line-height: 150%;
+    font-weight: 100;
+
+    text-align: center;
+}
+.Colab-grid{
+    width: 50%;
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 2.5rem;
+}
+.Colab-li{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+}  
+.Colab-picture{
+    width: 100%;
+    height: 5rem;
+}
+.Colab-img{
+    object-fit: contain;
+}
+
+
+
+
+.Gal{
+    background-color: var(--color-primary);
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    padding: 3.75rem 1.875rem;
+
+    gap: 1.25rem;
+}
+.Gal-text{
+    width: 50%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: start;
+
+    gap: 1.7rem;
+}
+.Gal-h2{
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 100%;
+}
+.Gal-p{
+    width: 80%;
+}
+.Gal-grid{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+    gap: 20px;
+}
+.Gal-picture{
+    background-color: var(--color-secundary);
+}
+
+/* Se utiliza object-fit cover para que las imágenes se adapten al tamaño de la contenedora */
+.Gal-img{
+    width: 100%;
+    height: 10rem;
+    background-color: var(--color-secundary);
+
+    object-fit: cover;
+}
+
+
+
+.Responsive {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.Header-hambur {
+    pointer-events: none;
+    background-color: transparent;
+
+    width: 2rem;
+    height: 2rem;
+
+    display: none;
+}
+
+.Header-responsive{
+    background-color: var(--color-secundary);
+    width: 90vw;
+
+    padding: 1.25rem;
+
+    position: absolute;
+    top: 4.375rem;
+    right: calc(100% - 5vw);
+
+    transition: all 0.3s ease;
+
+    opacity: 0;
+    pointer-events: none;
+
+
+}
+
+.Active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.Responsive-ul {  
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+/* Se han agrupado todos los ajustes realizados para que la página se vea bien en pantallas pequeñas */
+
+@media (max-width: 64.375rem) {
+    .Colab-p{
+        max-width: 100%;
+    }
+    .Colab-grid{
+        width: 80%;
+    }
+}
+
+
+
+@media (max-width: 60rem) {
+    .Gal{
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+    }
+    .Gal-img{
+        width: 100%;
+    }
+
+    .Gal-grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    
+        gap: 10px;
+
+        margin: auto;
+    }
+
+    .Gal-text {
+        width: 100%;
+    }
+
+    .Gal-li {
+        padding: 1.25rem;
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Gal-h2{
+        max-width: 70%;
+    }
+    .Gal-a{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+@media (max-width: 62.5rem) {
+    .Servicios-p {
+        max-width: 90%;
+        margin-top: .625rem;
+    }
+}
+@media (max-width: 58rem) {
+    .Servicios {
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .Servicios-text {
+        width: 100%;
+    }
+
+    .Servicios-wrapper {
+        width: 100%;
+        border-left: none;
+
+        padding-left: 0rem;
+    }
+
+    .Servicios-ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding-left: 0rem;
+        padding-top: 1.25rem;
+        }
+
+    .Servicios-li {
+        padding: 1.25rem;
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Servicios-a{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 64.375rem) {
+    .Empleo{
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+    .Empleo-picture{
+        width: 50%;
+    }
+    .Empleo-text{
+        width: 90%;
+    
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+    }
+    .Empleo-p{
+        width: 100%;
+    }
+}
+
+@media(max-width:700px){
+    .Servicios-ul{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+}
+
+@media (max-width: 64.375rem) {
+    .Hero {
+        flex-direction: column-reverse;
+    }
+
+    .Hero-picture {
+        width: 90%;
+    }
+
+    .Hero-text {
+        width: 90%;
+        align-items: center;
+    }
+
+    .Hero-h1 {
+        text-align: center;
+    }
+
+    .Hero-p {
+        max-width: 70%;
+        text-align: center;
+    }
+}
+
+
+
+/* El menú de navegación se oculta en pantallas pequeñas
+ y en su lugar, se muestra un hamburger menu, que es más adecuado
+  para pantallas reducidas. Con java script se ha animado el menú navegación 
+  para que se muestre al hacer click en el menu */
+
+@media(max-width: 760px) {
+    .Header-nav {
+        display: none;
+    }
+
+    .Header-hambur {
+        display: block;
+        pointer-events: auto;
+    }
+
+}
+
+
+@media(max-width: 760px) {
+
+    .Footer {
+        flex-direction: column;
+    }
+
+    .Footer-wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        border-right: none;
+    }
+
+
+    .Footer-ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: start;
+        align-items: center;
+
+        gap: 1rem;
+    }
+
+
+    .Footer-info {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2.6rem;
+    }
+
+
+    .Footer-pags {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+
+        padding-bottom: 2.7rem;
+    }
+
+    .Contact-section {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

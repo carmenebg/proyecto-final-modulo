@@ -1,0 +1,567 @@
+/* Reset / Normmalizador */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+p a {
+    display: inline;
+}
+
+img,
+svg {
+    display: block;
+    width: 100%;
+    height: inherit;
+}
+
+svg {
+    fill: currentColor;
+}
+
+:root {
+    font-size: 100%;
+    scroll-behavior: smooth;
+    font-family: "Syne", sans-serif;
+
+    --color-primary: rgb(255, 255, 252);
+    --color-secundary: #002200;
+    --color-terciary: lightgray;
+    --color-cuarty: rgb(160, 159, 159);
+
+}
+
+body {
+    font-family: "Syne", sans-serif;
+    hyphens: auto;
+    color: var(--color-secundary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.Button {
+    background-color: var(--color-terciary);
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 1.25rem;
+    padding: .3125rem .625rem;
+
+    border-radius: 3.125rem;
+
+    transition: all .3s ease;
+}
+
+.Button:hover {
+    background-color: var(--color-cuarty);
+}
+
+.Button:hover .Button--svg {
+    transform: translateX(-0.9375rem);
+
+}
+
+.Button--span {
+    font-family: "Syne", serif;
+}
+
+.Button--svg {
+    width: 1rem;
+    transition: all .3s ease;
+}
+
+.Pointer {
+    width: 1.5625rem;
+    height: 1.5625rem;
+    border-radius: 3.125rem;
+    pointer-events: none;
+
+    position: fixed;
+    top: -0.75rem;
+    left: -0.75rem;
+
+    mix-blend-mode: multiply;
+
+    opacity: 0;
+}
+
+.Hover {
+    width: 3.75rem;
+    height: 3.75rem;
+    background-color: var(--color-secundary);
+
+    top: -2.7rem;
+    left: -2.7rem;
+
+    transition: all 0.1s ease;
+
+    opacity: 1;
+}
+
+.Header-h1{
+    display: none;
+}
+
+
+.Header {
+    background-color: var(--color-secundary);
+    color: var(--color-primary);
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: .625rem 1.875rem;
+
+    position: fixed;
+    top: 0rem;
+    right: 0rem;
+
+    font-size: 1.025rem;
+
+    z-index: 3;
+}
+
+.Header-svg {
+    max-width: 5rem;
+}
+
+.Header-ul {
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+    align-items: center;
+
+    gap: 1.875rem;
+}
+
+
+
+.Contacto {
+    background-color: var(--color-primary);
+
+    width: 100%;
+    padding: 3.75rem 1.875rem;
+    margin: 90px 0px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 1.25rem;
+}
+
+.Contacto-text {
+    max-width: 50%;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: start;
+
+    gap: 1.25rem;
+}
+
+.Contacto-h2 {
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+.Contacto-p {
+    max-width: 80%;
+
+    font-size: 1.025rem;
+    line-height: 150%;
+    font-weight: 100;
+}
+
+.Contacto-form {
+    width: 50%;
+    height: 25rem;
+
+    padding: 1.875rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: start;
+
+    gap: 1.25rem;
+}
+
+/* La parte del formulario está contenida en .Contacto-form. 
+Este formulario tiene algunos campos de entrada y casillas de verificación, 
+modificados con css para mejorar el aspecto del formulario.
+ */
+
+.Contacto-input {
+    width: 80%;
+    padding: .625rem;
+    background-color: var(--color-primary);
+
+    font-family: "Syne", sans-serif;
+
+    font-size: 1.025rem;
+    line-height: 150%;
+    font-weight: 100;
+
+    border-bottom: .0625rem solid var(--color-secundary);
+
+}
+
+.Contacto-input--labol {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+}
+
+.Contacto-input--ckeckbox {
+    width: 20px;
+    height: 20px;
+
+    transition: all 0.3s ease;
+}
+
+
+.Contacto-span {
+    padding: 20px 10px;
+}
+
+
+.Contact-label {
+    width: 100%;
+}
+
+
+.Contacto-button {
+    position: relative;
+}
+
+.Contacto-map{
+    padding: 0px;
+    margin: 0px;
+}
+
+.Contacto-map--recurso{
+    margin: auto;
+    width: 100%;
+}
+
+.Contacto-ul{
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 15px;
+}
+.Contacto-li{
+    width: 20px;
+    height: 20px;
+
+    color: var(--color-secundary);
+}
+
+.Contacto-section{
+    padding: 20px 0px;
+}
+.Contacto-item{
+    text-decoration: underline;
+}
+
+
+
+.Footer {
+    background-color: var(--color-secundary);
+    color: var(--color-primary);
+
+    padding: 3.75rem 1.875rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    /* margin-top: 3.125rem; */
+}
+
+.Footer-wrapper {
+    width: 30%;
+    min-height: 12.5rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: start;
+
+    border-right: .0625rem solid var(--color-primary);
+}
+
+.Footer-img {
+    width: 7.5rem;
+}
+
+.Footer-ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-items: center;
+
+    gap: 1rem;
+}
+
+.Footer-li {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--color-primary);
+
+    border-radius: 50%;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Footer-a--redes {
+    width: 60%;
+    color: var(--color-secundary);
+}
+
+.Footer-info {
+    width: 70%;
+    min-height: 12.5rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.Footer-pags {
+    min-height: 11.25rem;
+    font-family: "Syne", sans-serif;
+    font-size: 1.5rem;
+    line-height: 100%;
+}
+
+.Pags-li {
+    font-size: 1.025rem;
+    line-height: 150%;
+    font-weight: 100;
+}
+
+.Contact-wrapper {
+    min-height: 11.25rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.Contact-ul {
+    font-family: "Syne", sans-serif;
+    font-size: 1.5rem;
+    line-height: 100%;
+}
+
+.Contact-li {
+    font-size: 1.025rem;
+    line-height: 150%;
+    font-weight: 100;
+}
+
+.first {
+    margin-top: 1.25rem;
+}
+
+.Contact-title {
+    font-family: "Syne", sans-serif;
+    font-size: 1.5rem;
+    line-height: 100%;
+}
+
+
+
+
+.first {
+    margin-top: 1.25rem;
+}
+
+
+
+.Responsive {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.Header-hambur {
+    display: none;
+    pointer-events: none;
+    background-color: transparent;
+
+    width: 2rem;
+    height: 2rem;
+}
+
+.Header-responsive{
+    background-color: var(--color-secundary);
+    width: 90vw;
+
+    padding: 1.25rem;
+
+    position: absolute;
+    top: 4.375rem;
+    right: calc(100% - 5vw);
+
+    transition: all 0.3s ease;
+
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+.Active{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.Responsive-ul {
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.Header-nav{
+    width: 90%;
+}
+
+
+/* Para hacer que todo se vea bien en pantallas pequeñas, se utilizan media queries */
+
+@media (max-width: 53.4375rem) {
+    .Contacto {
+        flex-direction: column;
+    }
+
+    .Contacto-text {
+        max-width: 90%;
+        background-color: transparent;
+        align-items: center;
+        text-align: center;
+    }
+    .Contacto-input{
+        width: 100%;
+    }
+    .Contacto-form{
+        width: 90%;
+    }
+
+}
+
+
+@media(max-width: 760px) {
+    .Header-nav {
+        display: none;
+    }
+
+    .Header-hambur {
+        display: block;
+        pointer-events: auto;
+    }
+
+}
+
+
+@media(max-width: 760px) {
+
+    .Footer {
+        flex-direction: column;
+    }
+
+    .Footer-wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        border-right: none;
+    }
+
+
+    .Footer-ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: start;
+        align-items: center;
+
+        gap: 1rem;
+    }
+
+
+    .Footer-info {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2.6rem;
+    }
+
+
+    .Footer-pags {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+
+        padding-bottom: 2.7rem;
+    }
+
+    .Contact-section {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/proyectos.css">
+    <script src="js/proyectos.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="Header">
+        <a href="index.html" class="Header-logo--a">
+            <h1 class="Header-h1">Facal Varela arquitectura e interiorismo</h1>
+
+            <picture class="Header-logo">
+                <img loading="lazy" src="assets/simple-blanco.svg" alt="logo facal varela" class="Header-svg">
+            </picture>
+        </a>
+        <nav class="Header-nav">
+            <ul class="Header-ul">
+                <li class="Header-li"><a href="estudio.html" class="Header-a">Estudio</a></li>
+                <li class="Header-li"><a href="servicios.html" class="Header-a">Servicios</a></li>
+                <li class="Header-li"><a href="proyectos.html" class="Header-a">Proyectos</a></li>
+                <li class="Header-li"><a href="lowcost.html" class="Header-a">Low cost</a></li>
+                <li class="Header-li"><a href="contacto.html" class="Header-a">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="Responsive">
+            <button class="Header-hambur">
+                <img loading="lazy" src="assets/hambur.svg" alt="Menu hambburguesa" class="Hambur-svg">
+            </button>
+            <div class="Header-responsive">
+                <ul class="Responsive-ul">
+                    <li class="Responsive-li"><a href="index.html" class="Responsive-a">Inicio</a></li>
+                    <li class="Responsive-li"><a href="estudio.html" class="Responsive-a">Estudio</a></li>
+                    <li class="Responsive-li"><a href="servicios.html" class="Responsive-a">Servicios</a></li>
+                    <li class="Responsive-li"><a href="proyectos.html" class="Responsive-a">Proyectos</a></li>
+                    <li class="Responsive-li"><a href="lowcost.html" class="Responsive-a">Low cost</a></li>
+                    <li class="Responsive-li"><a href="contacto.html" class="Responsive-a">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="Main">
+        <div class="Hero">
+            <h2 class="Hero-h1">Nuestros proyectos</h2>
+            <p class="Hero-p">Organizamos su obra a todos los niveles, desde la concepción del proyecto hasta la
+                puesta en servicio del edificio, asesorándole en el diseño y los materiales, en la elección del
+                constructor, controlando y supervisando por usted su desarrollo, gestionando ante las administraciones
+                toda la documentación [licencias, permisos, certificaciones, catastro notarias, registro, etc.] y
+                coordinado a todos los agentes intervinientes en la obra.</p>
+        </div>
+
+        <!-- Esta lista de botones sirve a modo de filtro, con el código de Java, al pinchar sobre cada 
+         elemento de la lista, se ocultan las fotos que no se quieren ver y se muestran solo las que cumplen las
+         características que marca el filtro.-->
+        <div class="Navegacion">
+            <ul class="Navegacion-ul">
+                <li class="Navegacion-li">
+                    <button class="Navegacion-button  Todo-button">Todo</button>
+                </li>
+                <li class="Navegacion-li">
+                    <button class="Navegacion-button  Viviendas-button">Viviendas</button>
+                </li>
+                <li class="Navegacion-li">
+                    <button class="Navegacion-button  Obra-button">Obra terminada</button>
+                </li>
+                <li class="Navegacion-li">
+                    <button class="Navegacion-button  Equipamiento-button">Equipamientos</button>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Este Grid de imágenes muestra los proyectos realizados en el estudio con el nombre de cada uno de ellos.
+         Se ha utilizado el atributo "Loading lazy" para evitar que carguen todas las imagenes que no aparecen en pantalla -->
+        <div class="Grid">
+            <div class="Grid-wrapper Obra">
+                <picture class="Grid-picture">
+                    <img loading="lazy" src="assets/ponte-min.jpg" alt="Imagen de proyecto" class="Grid-img">
+                </picture>
+                <p class="Grid-p">Vivienda en Ponte</p>
+            </div>
+            <div class="Grid-wrapper Viv">
+                <picture class="Grid-picture">
+                    <img loading="lazy" src="assets/hospi-min.jpg" alt="Imagen de proyecto" class="Grid-img">
+                </picture>
+                <p class="Grid-p">Vivienda en Hospitalet</p>
+            </div>
+            <div class="Grid-wrapper Viv">
+                <picture class="Grid-picture">
+                    <img loading="lazy" src="assets/seoane-min.jpg" alt="Imagen de proyecto" class="Grid-img">
+                </picture>
+                <p class="Grid-p">Vivienda en Seoane</p>
+            </div>
+            <div class="Grid-wrapper Viv">
+                <picture class="Grid-picture">
+                    <img loading="lazy" src="assets/1-min.jpg" alt="Imagen de proyecto" class="Grid-img">
+                </picture>
+                <p class="Grid-p">Vivienda en Malpica</p>
+            </div>
+            <div class="Grid-wrapper Viv">
+                <picture class="Grid-picture">
+                    <img loading="lazy" src="assets/outes-min.jpg" alt="Imagen de proyecto" class="Grid-img">
+                </picture>
+                <p class="Grid-p">Vivienda en Outes</p>
+            </div>
+            <div class="Grid-wrapper Viv">
+                <picture class="Grid-picture">
+                    <img loading="lazy" src="assets/bouza-min.jpg" alt="Imagen de proyecto" class="Grid-img">
+                </picture>
+                <p class="Grid-p">Vivienda en Bouza</p>
+            </div>
+            <div class="Grid-wrapper Viv">
+                <picture class="Grid-picture">
+                    <img loading="lazy" src="assets/rebordelos-min.jpg" alt="Imagen de proyecto" class="Grid-img">
+                </picture>
+                <p class="Grid-p">Vivienda en Rebordelos</p>
+            </div>
+            <div class="Grid-wrapper Viv">
+                <picture class="Grid-picture">
+                    <img loading="lazy" src="assets/picota-min.jpg" alt="Imagen de proyecto" class="Grid-img">
+                </picture>
+                <p class="Grid-p">Vivienda en A Picota</p>
+            </div>
+            <div class="Grid-wrapper Viv">
+                <picture class="Grid-picture">
+                    <img loading="lazy" src="assets/baio-min.jpg" alt="Imagen de proyecto" class="Grid-img">
+                </picture>
+                <p class="Grid-p">Vivienda en Baio</p>
+            </div>
+            <div class="Grid-wrapper Obra">
+                <picture class="Grid-picture">
+                    <img loading="lazy" src="assets/boimorto-min.jpg" alt="Imagen de proyecto" class="Grid-img">
+                </picture>
+                <p class="Grid-p">Vivienda en Boimorto</p>
+            </div>
+            <div class="Grid-wrapper Viv">
+                <picture class="Grid-picture">
+                    <img loading="lazy" src="assets/laracha-min.jpg" alt="Imagen de proyecto" class="Grid-img">
+                </picture>
+                <p class="Grid-p">Vivienda en Laracha</p>
+            </div>
+            <div class="Grid-wrapper Viv">
+                <picture class="Grid-picture">
+                    <img loading="lazy" src="assets/agron-min.jpg" alt="Imagen de proyecto" class="Grid-img">
+                </picture>
+                <p class="Grid-p">Vivienda en Agron</p>
+            </div>
+            <div class="Grid-wrapper Obra">
+                <picture class="Grid-picture">
+                    <img loading="lazy" src="assets/salgueiroas-min.jpg" alt="Imagen de proyecto" class="Grid-img">
+                </picture>
+                <p class="Grid-p">Vivienda en Salgueiroas</p>
+            </div>
+            <div class="Grid-wrapper Viv">
+                <picture class="Grid-picture">
+                    <img loading="lazy" src="assets/opino-min.jpg" alt="Imagen de proyecto" class="Grid-img">
+                </picture>
+                <p class="Grid-p">Vivienda en O Pino</p>
+            </div>
+            <div class="Grid-wrapper Obra">
+                <picture class="Grid-picture">
+                    <img loading="lazy" src="assets/barreiros-min.jpg" alt="Imagen de proyecto" class="Grid-img">
+                </picture>
+                <p class="Grid-p">Vivienda en Barreiros</p>
+            </div>
+            <div class="Grid-wrapper Viv">
+                <picture class="Grid-picture">
+                    <img loading="lazy" src="assets/bazar-min.jpg" alt="Imagen de proyecto" class="Grid-img">
+                </picture>
+                <p class="Grid-p">Vivienda en Bazar</p>
+            </div>
+            <div class="Grid-wrapper Viv">
+                <picture class="Grid-picture">
+                    <img loading="lazy" src="assets/bemil-min.jpg" alt="Imagen de proyecto" class="Grid-img">
+                </picture>
+                <p class="Grid-p">Vivienda en Bemil</p>
+            </div>
+            <div class="Grid-wrapper Viv">
+                <picture class="Grid-picture">
+                    <img loading="lazy" src="assets/mazaricos-min.jpg" alt="Imagen de proyecto" class="Grid-img">
+                </picture>
+                <p class="Grid-p">Vivienda en Mazaricos</p>
+            </div>
+            <div class="Grid-wrapper Viv">
+                <picture class="Grid-picture">
+                    <img loading="lazy" src="assets/negreira-min.jpg" alt="Imagen de proyecto" class="Grid-img">
+                </picture>
+                <p class="Grid-p">Vivienda en Negreira</p>
+            </div>
+            <div class="Grid-wrapper Obra">
+                <picture class="Grid-picture">
+                    <img loading="lazy" src="assets/gatiñeira-min.jpg" alt="Imagen de proyecto" class="Grid-img">
+                </picture>
+                <p class="Grid-p">Vivienda en Gatiñeira</p>
+            </div>
+            <div class="Grid-wrapper Equi">
+                <picture class="Grid-picture">
+                    <img loading="lazy" src="assets/maroñas-min.jpg" alt="Imagen de proyecto" class="Grid-img">
+                </picture>
+                <p class="Grid-p">Ampliación Maroñas</p>
+            </div>
+            <div class="Grid-wrapper Equi">
+                <picture class="Grid-picture">
+                    <img loading="lazy" src="assets/picota-min.jpg" alt="Imagen de proyecto" class="Grid-img">
+                </picture>
+                <p class="Grid-p">Edificios Picotas</p>
+            </div>
+            <div class="Grid-wrapper Equi">
+                <picture class="Grid-picture">
+                    <img loading="lazy" src="assets/opino-min.jpg" alt="Imagen de proyecto" class="Grid-img">
+                </picture>
+                <p class="Grid-p">Rehabilitación O Pino</p>
+            </div>
+            <div class="Grid-wrapper Equi">
+                <picture class="Grid-picture">
+                    <img loading="lazy" src="assets/peregrinos-min.jpg" alt="Imagen de proyecto" class="Grid-img">
+                </picture>
+                <p class="Grid-p">Albergue Peregrinos</p>
+            </div>
+            <div class="Grid-wrapper Equi">
+                <picture class="Grid-picture">
+                    <img loading="lazy" src="assets/cementerio-min.jpg" alt="Imagen de proyecto" class="Grid-img">
+                </picture>
+                <p class="Grid-p">Cementerio Sta Comba</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="Footer">
+        <div class="Footer-wrapper">
+            <picture class="Footer-logo">
+                <img loading="lazy" src="assets/simple-blanco.svg" alt="Logo facal varela" class="Footer-img">
+            </picture>
+            <ul class="Footer-ul">
+                <li class="Footer-li"><a href="https://es.linkedin.com" target="_blank" rel="noopener noreferrer"
+                        class="Footer-a--redes"><img loading="lazy" src="assets/linkedin.svg" alt="Instagram"
+                            class="Footer-li--redes"></a>
+                </li>
+                <li class="Footer-li"><a
+                        href="https://www.facebook.com/people/FACAL-Varela-arquitectura-e-interiorismo/100063511334320/?locale=es_ES"
+                        target="_blank" rel="noopener noreferrer" class="Footer-a--redes"><img loading="lazy"
+                            src="assets/facebook.svg" alt="Faceebok" class="Footer-li--redes"></a>
+                </li>
+                <li class="Footer-li"><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
+                        class="Footer-a--redes"><img loading="lazy" src="assets/logo-instagram.svg" alt="Linkedin"
+                            class="Footer-li--redes"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="Footer-info">
+            <ul class="Footer-pags">
+                <li class="Pags-li Contact-title ">Páginas</li>
+                <li class="Pags-li first"><a href="index.html" class="Pags-a">Inicio</a></li>
+                <li class="Pags-li"><a href="estudio.html" class="Pags-a">Estudio</a></li>
+                <li class="Pags-li"><a href="servicios.html" class="Pags-a">Servicios</a></li>
+                <li class="Pags-li"><a href="proyectos.html" class="Pags-a">Proyectos</a></li>
+                <li class="Pags-li"><a href="lowcost.html" class="Pags-a">Low cost</a></li>
+                <li class="Pags-li"><a href="contacto.html" class="Pags-a">Contacto</a></li>
+            </ul>
+            <div class="Contact-wrapper">
+                <div class="Contact-section">
+                    <h3 class="Contact-title">Dirección</h3>
+                    <p class="Contact-item first">Rúa de María Pita, s/n</p>
+                    <p class="Contact-item">Entreplanta Dcha B</p>
+                    <p class="Contact-item">15840. Santa Comba, A Coruña</p>
+                </div>
+
+                <div class="Contact-section">
+                    <a href="tel:+34616791013" class="Contact-item first">616 79 10 13</a>
+                    <a href="mailto:correo@arquitecturafv.es" class="Contact-item">correo@arquitecturafv.es</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
